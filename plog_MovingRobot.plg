@@ -1,0 +1,21 @@
+#domain room(R).
+
+boolean = {true, false}.
+room = {r1, r2, r3}.
+
+open: room -> boolean.
+in: room.
+goIn: room.
+ab, break : boolean.
+
+
+open(R)=true :- not open(R)=false.
+in=R :- goIn=R, not ab.
+ab :- break.
+goIn=r1.
+break.
+
+[1] random(in: {X: open(X)}) :- goIn=R, break.
+[1] pr(in=R | goIn=R, break) = 1/2.
+
+?{in=r3}.

@@ -1,0 +1,94 @@
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -t plog_VariantMontyHall_4.plg 
+Syntax Parse Succeed
+Smodels computation time:  0.000
+Answer
+prize=4 probability: 0.384615 0.384615
+Probability Computing Time:0.000224
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -t plog_VariantMontyHall_5.plg 
+Syntax Parse Succeed
+Smodels computation time:  0.000
+Answer
+prize=1 probability: 0.296703 0.296703
+Probability Computing Time:0.000319
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -t plog_VariantMontyHall_10.plg 
+Syntax Parse Succeed
+Smodels computation time:  0.000
+Answer
+prize=1 probability: 0.294931 0.294931
+Probability Computing Time:0.001265
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -t plog_VariantMontyHall_100.plg 
+Syntax Parse Succeed
+Smodels computation time:  0.086
+Answer
+prize=1 probability: 0.299405 0.299405
+Probability Computing Time:0.076525
+
+***************************************************************************
+
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -t plog_VariantMontyHall_1000.plg 
+Syntax Parse Succeed
+Answer
+prize=3 probability: 0.222666 0.222666
+Probability Computing Time:0.709586
+
+
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -t plog_VariantMontyHall_1000.plg 
+Syntax Parse Succeed
+Answer
+prize=3 probability: 0.834237 0.834237
+Probability Computing Time:0.714572
+
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -t plog_VariantMontyHall_1000.plg 
+Syntax Parse Succeed
+Answer
+prize=1 probability: 0 1.22125e-15
+prize=2 probability: 0 1.22125e-15
+prize=3 probability: 2.00401e-07 2.00401e-07
+prize=4 probability: 0 1.22125e-15
+Probability Computing Time:0.71134 (84s)
+
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -t plog_VariantMontyHall_1000.plg 
+Syntax Parse Succeed
+Answer
+prize=3 probability: 0.835693 0.835693
+Probability Computing Time:0.743487 (84s)
+
+***************************************************************************
+
+
+
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -p plog_VariantMontyHall_4.plg 
+Syntax Parse Succeed
+Grounding Finished and its duration:0.001228
+Partial Answer Set Size 3
+Answer
+prize=4 probability: 0.384615 0.384615
+Answer Sets computed and its duration:0.000221
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -p plog_VariantMontyHall_5.plg 
+Syntax Parse Succeed
+Grounding Finished and its duration:0.002244
+Partial Answer Set Size 4
+Answer
+prize=1 probability: 0.296703 0.296703
+Answer Sets computed and its duration:0.000544
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -p plog_VariantMontyHall_10.plg 
+Syntax Parse Succeed
+Grounding Finished and its duration:0.003765
+Partial Answer Set Size 9
+Answer
+prize=1 probability: 0.294931 0.294931
+Answer Sets computed and its duration:0.00142
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -p plog_VariantMontyHall_100.plg 
+Syntax Parse Succeed
+Grounding Finished and its duration:0.032208
+Partial Answer Set Size 99
+Answer
+prize=1 probability: 0.299405 0.299405
+Answer Sets computed and its duration:0.09779
+zyang90@reasoning-server:~/thesisExp/benchmark/plog$ plog -p plog_VariantMontyHall_1000.plg 
+Syntax Parse Succeed
+Grounding Finished and its duration:2.05518
+Partial Answer Set Size 999
+Answer
+prize=1 probability: 0.29994 0.29994
+Answer Sets computed and its duration:55.6697

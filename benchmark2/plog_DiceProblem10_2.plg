@@ -1,0 +1,24 @@
+#domain dice(D).
+
+dice={1..10}.
+number={1..6}.
+person={mike,john}.
+boolean={true, false}.
+
+roll:dice->number.
+
+
+owner(1,mike).
+owner(2,john).
+even(D)=true :- roll(D)=2.
+even(D)=true :- roll(D)=4.
+even(D)=true :- roll(D)=6.
+even(D)=false :- not even(D)=true.
+
+
+[r(D)] random(roll(D)).
+
+[r(D)] pr(roll(D)=5|owner(D,mike))=1/4.
+[r(D)] pr(roll(D)=6|owner(D,mike))=1/5.
+
+?{(roll(1)=6 and roll(2)=6)}.

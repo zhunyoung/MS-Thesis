@@ -1,0 +1,22 @@
+#domain door(D).
+
+door = {1..400}.
+boolean = {true, false}.
+
+prize,open,selected:door.
+can_open: door -> boolean.
+
+can_open(D)=false :- selected = D.
+can_open(D)=false :- prize = D.
+can_open(D)=true :- not can_open(D)=false.
+
+[r1] random(prize).
+[r2] random(selected).
+[r3] random(open:{X: can_open(X)}).
+
+[r1] pr(prize=1)=3/10.
+[r1] pr(prize=3)=1/5.
+
+prizeNotBehind2 :- not prize=2.
+
+?{prize=1,prize=2,prize=3,prize=4}|obs(selected=1),obs(open=2),obs(prizeNotBehind2).

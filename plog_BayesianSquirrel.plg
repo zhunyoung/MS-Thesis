@@ -1,0 +1,21 @@
+#domain patch(P).
+#domain day(D).
+#domain boolean(B).
+
+patch={p1, p2}.
+day = {1..5}.
+boolean = {true, false}.
+
+found: patch,day -> boolean.
+hiddenIn: patch.
+look: day -> patch.
+
+found(P,D)=false :- not found(P,D)=true, patch(P), day(D).
+
+[r1] random(hiddenIn).
+[r2] random(found(P,D)) :- hiddenIn=P, look(D)=P.
+
+[r1] pr(hiddenIn=p1)=4/5.
+[r2] pr(found(P,D)=true)=1/5.
+
+?{found(p1,1)=true, found(p1,1)=false}|do(look(1)=p1).
